@@ -1,4 +1,4 @@
-<body>
+<body data-spy="scroll" data-target="#navbar">
     
     <header>
     	<div class="header__top d-none d-md-block">
@@ -41,7 +41,7 @@
     	</div>
     	<div class="header__bottom">
     		<div class="container">
-	    		<nav class="navbar navbar-expand-lg navbar-light">
+	    		<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
 				  <a class="navbar-brand navbar__brand" href="index.php"><img src="img/logo_100x100.png" alt="Anipal Logo"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
@@ -49,8 +49,8 @@
 
 				  <div class="collapse navbar-collapse" id="navbarToggler">
 				    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-				      <li class="nav-item active">
-				        <a class="nav-link header__bottom__link" href="index.php">Home <span class="sr-only">(current)</span></a>
+				      <li class="nav-item">
+				        <a class="nav-link header__bottom__link" href="#home">Home <span class="sr-only">(current)</span></a>
 				      </li>
 				      <li class="nav-item">
 				        <a class="nav-link header__bottom__link" href="#">About</a>
