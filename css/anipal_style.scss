@@ -1,0 +1,161 @@
+// Stylesheet by Thanawan Pinlaem http://zbframe.com 2019-05-21
+
+// colours
+$header_bar_top: #ffdddd;
+$header_bar_bottom: #ffffff;
+
+// text
+$text_light: #ffffff;
+$title_line1: #dadbdd;
+$title_dark: #231f20;
+$title_light: #ffffff;
+
+$text_link: #333333;
+$text_link_hover: #999999;
+
+
+body{
+	font-family: 'Nunito', sans-serif;
+	overflow-x: hidden;
+	font-size: 16px;
+	color: #333;
+}
+
+// header
+header{
+	// background-color: $header_bar_top;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 2;
+	width: 100%;
+
+	.header__top{
+		background-color: $header_bar_top;
+
+		.navbar{
+			padding: 0.5rem 0rem;
+
+			.nav__item{
+				margin-right: 1rem;
+
+				span{
+					margin-left: 0.5rem;
+				}
+			}
+
+			.header__top__link{
+				color: $text_link;
+				transition: all 0.3s ease;
+
+				&:hover{
+					color: $text_link_hover;
+					text-decoration: none;
+				}
+			}
+		}	
+	}
+
+	.header__bottom{
+		background-color: $header_bar_top;
+
+		.navbar{
+			padding: 0rem;
+
+			.navbar__brand{
+				img{
+					height: 50px;
+				}
+			}
+
+			.navbar-nav{
+				.header__bottom__link{
+					font-size: 1.25rem;
+					text-transform: uppercase;
+					padding-left: 1rem;
+					padding-right: 1rem;
+					color: $text_link;
+
+					&:hover{
+						color: $text_link_hover;
+						text-decoration: none;
+					}
+				}
+
+				.nav-item{
+					&.active{
+						.header__bottom__link{
+							color: $text_link_hover;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// banner
+.banner__wrapper{
+	height: 100vh;
+
+	.banner{
+		.banner__item{
+			position: relative;
+		}
+
+		.banner__item1{
+			background-image: url('../img/banner/banner1.jpg');
+			background-size: cover;
+			background-position: center center;
+    		height: 100vh;
+		}
+
+		.banner__item2{
+			background-image: url('../img/banner/banner2.jpg');
+			background-size: cover;
+			background-position: center center;
+    		height: 100vh;
+		}
+
+		.carousel-inner{
+			height: 100vh;
+		}
+	}
+
+	
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px){
+
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px){
+	header{
+		// background-color: transparent;
+
+		.header__top{
+
+		}
+
+		.header__bottom{
+			background-color: $header_bar_bottom;
+		}
+	}
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px){
+
+}

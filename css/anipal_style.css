@@ -1,0 +1,66 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  color: #333; }
+
+header {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  width: 100%; }
+  header .header__top {
+    background-color: #ffdddd; }
+    header .header__top .navbar {
+      padding: 0.5rem 0rem; }
+      header .header__top .navbar .nav__item {
+        margin-right: 1rem; }
+        header .header__top .navbar .nav__item span {
+          margin-left: 0.5rem; }
+      header .header__top .navbar .header__top__link {
+        color: #333333;
+        transition: all 0.3s ease; }
+        header .header__top .navbar .header__top__link:hover {
+          color: #999999;
+          text-decoration: none; }
+  header .header__bottom {
+    background-color: #ffdddd; }
+    header .header__bottom .navbar {
+      padding: 0rem; }
+      header .header__bottom .navbar .navbar__brand img {
+        height: 50px; }
+      header .header__bottom .navbar .navbar-nav .header__bottom__link {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: #333333; }
+        header .header__bottom .navbar .navbar-nav .header__bottom__link:hover {
+          color: #999999;
+          text-decoration: none; }
+      header .header__bottom .navbar .navbar-nav .nav-item.active .header__bottom__link {
+        color: #999999; }
+
+.banner__wrapper {
+  height: 100vh; }
+  .banner__wrapper .banner .banner__item {
+    position: relative; }
+  .banner__wrapper .banner .banner__item1 {
+    background-image: url("../img/banner/banner1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; }
+  .banner__wrapper .banner .banner__item2 {
+    background-image: url("../img/banner/banner2.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; }
+  .banner__wrapper .banner .carousel-inner {
+    height: 100vh; }
+
+@media (min-width: 768px) {
+  header .header__bottom {
+    background-color: #ffffff; } }
+
+/*# sourceMappingURL=anipal_style.css.map */
