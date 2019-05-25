@@ -19,7 +19,7 @@
 	        <div class="carousel-caption d-block banner__caption">
 	          <h1>We will take care of your pets</h1>
 	          <div class="button__box">
-	          	<button class="btn btn--light" onclick="location.href='http://www.google.com'">Contact Us</button>
+	          	<button class="btn btn--light smooth">Contact Us</button>
 	          </div>
 	        </div>
 	        <div class="banner--overlay"></div>
@@ -28,7 +28,7 @@
 	        <div class="carousel-caption d-block d-md-block banner__caption">
 	          <h1>Pet training is available here</h1>
 	          <div class="button__box">
-	          	<button class="btn btn--light">Contact Us</button>
+	          	<button class="btn btn--light smooth">Contact Us</button>
 	          </div>
 	        </div>
 	        <div class="banner--overlay"></div>
@@ -39,7 +39,7 @@
 	<!-- end banner__wrapper -->
 
 	<!-- aboutus__wrapper -->
-	<div class="aboutus__wrapper">
+	<div class="aboutus__wrapper" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-lg-4 aboutus__image">
@@ -66,7 +66,7 @@ deserunt mollit anim id est laborum</p>
 
 
 	<!-- service__wrapper -->
-	<div class="service__wrapper">
+	<div class="service__wrapper" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -158,7 +158,7 @@ Ut enim ad minim veniam</p>
 
 
 	<!-- gallery__wrapper -->
-	<div class="gallery__wrapper">
+	<div class="gallery__wrapper" id="gallery">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -169,37 +169,37 @@ Ut enim ad minim veniam</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery">
+				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery__modal">
 					<figure>
 						<div class="gallery--overlay"><i class="fas fa-expand-arrows-alt fa-2x"></i></div>
 						<img src="img/gallery/image1.jpg" class="img-fluid" alt="image1">
 					</figure>
 				</div>
-				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery">
+				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery__modal">
 					<figure>
 						<div class="gallery--overlay"><i class="fas fa-expand-arrows-alt fa-2x"></i></div>
 						<img src="img/gallery/image2.jpg" class="img-fluid" alt="image1">
 					</figure>
 				</div>
-				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery">
+				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery__modal">
 					<figure>
 						<div class="gallery--overlay"><i class="fas fa-expand-arrows-alt fa-2x"></i></div>
 						<img src="img/gallery/image3.jpg" class="img-fluid" alt="image1">
 					</figure>
 				</div>
-				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery">
+				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery__modal">
 					<figure>
 						<div class="gallery--overlay"><i class="fas fa-expand-arrows-alt fa-2x"></i></div>
 						<img src="img/gallery/image4.jpg" class="img-fluid" alt="image4">
 					</figure>
 				</div>
-				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery">
+				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery__modal">
 					<figure>
 						<div class="gallery--overlay"><i class="fas fa-expand-arrows-alt fa-2x"></i></div>
 						<img src="img/gallery/image5.jpg" class="img-fluid" alt="image5">
 					</figure>
 				</div>
-				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery">
+				<div class="col-md-6 col-lg-4 gallery__box" data-toggle="modal" data-target="#gallery__modal">
 					<figure>
 						<div class="gallery--overlay"><i class="fas fa-expand-arrows-alt fa-2x"></i></div>
 						<img src="img/gallery/image6.jpg" class="img-fluid" alt="image6">
@@ -261,6 +261,146 @@ dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
 		</div>
 	</div>
 	<!-- end testimonial__wrapper -->
+
+
+	<!-- blog__wrapper -->
+	<div class="blog__wrapper" id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section__heading">
+						<p class="subtitle">Something</p>
+						<h2>We want to share</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 blog__card">
+					<a href="blog_single.php">
+						<figure>
+							<img src="img/blog/blog1.jpg" class="img-fluid" alt="Blog 1">
+						</figure>
+						<div class="blog__detail">
+							<h3>Lorem ipsum</h3>
+							<p>Duis aute irure dolor in reprehenderit in voluptate
+	velit esse cillum dolore eu fugiat nulla pariatur.
+	Excepteur sint occaecat cupidatat non proident,
+	sunt in culpa qui officia deserunt mollit anim id
+	est laborum.</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 blog__card">
+					<a href="blog_single.php">
+						<figure>
+							<img src="img/blog/blog2.jpg" class="img-fluid" alt="Blog 2">
+						</figure>
+						<div class="blog__detail">
+							<h3>Lorem ipsum</h3>
+							<p>Duis aute irure dolor in reprehenderit in voluptate
+	velit esse cillum dolore eu fugiat nulla pariatur.
+	Excepteur sint occaecat cupidatat non proident,
+	sunt in culpa qui officia deserunt mollit anim id
+	est laborum.</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 blog__card">
+					<a href="blog_single.php">
+						<figure>
+							<img src="img/blog/blog3.jpg" class="img-fluid" alt="Blog 3">
+						</figure>
+						<div class="blog__detail">
+							<h3>Lorem ipsum</h3>
+							<p>Duis aute irure dolor in reprehenderit in voluptate
+	velit esse cillum dolore eu fugiat nulla pariatur.
+	Excepteur sint occaecat cupidatat non proident,
+	sunt in culpa qui officia deserunt mollit anim id
+	est laborum.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="button__box">
+	          	<button class="btn btn--light" onclick="window.location.href='blog.php'">See More</button>
+          	</div>
+		</div>
+	</div>
+	<!-- end blog__wrapper -->
+
+
+	<!-- contact__wrapper -->
+	<div class="contact__wrapper" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section__heading">
+						<p class="subtitle light">Get in touch</p>
+						<h2>Contact</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 contact__detail">
+					<h1>Anipal Pet Care</h1>
+					<p>
+						<i class="fas fa-map-marker-alt"></i>
+						<span>16 Abc Street, Aldery Edge, Cheshire</span>
+					</p>
+					<p>
+						<i class="fas fa-envelope"></i>
+						<a href="mailto:example@email.co.uk">example@email.co.uk</a>
+					</p>
+					<p>
+						<i class="fas fa-phone"></i>
+						<a href="tel:07XXXXXXXXX">07XXXXXXXXX</a>
+					</p>
+				</div>
+				<div class="col-lg-6 contact__form">
+					<form>
+						<div class="form-row">
+							<div class="col-lg-12">
+						      <!-- <input type="text" class="form-control is-invalid" id="name" placeholder="Name"  required> -->
+						      <input type="text" class="form-control" id="name" placeholder="Name"  required>
+						      <div class="invalid-feedback">Please enter your name.</div>
+						    </div>
+						</div>
+						<div class="form-row">
+							<div class="col-lg-12">
+						      <input type="email" class="form-control" id="email" placeholder="Email"  required>
+						      <div class="invalid-feedback">Please enter your email.</div>
+						    </div>
+						</div>
+						<div class="form-row">
+							<div class="col-lg-12">
+						      <input type="text" class="form-control" id="phone" placeholder="Phone number (Optional)"  required>
+						    </div>
+						</div>
+						<div class="form-row">
+							<div class="col-lg-12">
+						      <input type="text" class="form-control" id="title" placeholder="Title"  required>
+						      <div class="invalid-feedback">Please enter a title.</div>
+						    </div>
+						</div>
+						<div class="form-row">
+							<div class="col-lg-12">
+						      <textarea class="form-control" id="message" placeholder="Message" required></textarea>
+							  <div class="invalid-feedback">
+							    Please enter a message.
+							  </div>
+						    </div>
+						</div>
+
+						<div class="button__box">
+				          	<button class="btn btn--dark">Send</button>
+			          	</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contact__wrapper -->
 	
 
 </main>

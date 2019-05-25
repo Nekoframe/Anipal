@@ -1,20 +1,32 @@
-  </body>
-</html>
+  
+<div class="nav--top">
+	<a class="nav--top__link" href="#top"><i class="fas fa-chevron-up fa-2x"></i></a>
+</div>
+<footer>
+	<p class="footer__copyright">Copyright <i class="far fa-copyright"></i> 2019 Anipal. All rights reserved.</p>
+	<p class="footer__copyright">Designed by <a href="http://zbframe.com" target="_blank">ZBframe</a>.</p>
+</footer>
+
+<!-- Credit -->
+<!-- https://www.freepik.com/free-photos-vectors/logo -->
+<!-- https://www.freepik.com/free-photos-vectors/border -->
+
+<!-- js -->
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/anipal.js"></script>
+
 
 
 <!-- gallery modal -->
-<div class="modal fade gallery__modal" id="gallery" tabindex="-1" role="dialog" aria-labelledby="gallery" aria-hidden="true">
+<div class="modal fade gallery__modal" id="gallery__modal" tabindex="-1" role="dialog" aria-labelledby="gallery" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header gallery__modal__head">
-        <!-- <h5 class="modal-title gallery__modal__title" id="gallery_title">Album 01 - Luxury Bathroom</h5> -->
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body gallery__modal_content">
-        
-
         <div id="gallery__image" class="carousel slide" data-ride="carousel">
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
@@ -45,51 +57,19 @@
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
-
-
       </div>
     </div>
   </div>
 </div>
+<!-- end gallery modal -->
+
+  </body>
+</html>
 
 
-<!-- Bootstrap Carousel -->
-<script type="text/javascript">
-	$('#banner').carousel({
-		interval: 6000,
 
-	});
-</script>
 
-<!-- Owl Carousel -->
-<script src="owlcarousel/owl.carousel.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-	  $("#testimonial__carousel").owlCarousel({
-	  	autoPlay: 3000,
-	  	loop: true,
-	    // margin: 30,
-	    item: 1,
 
-	    // responsiveClass: true,
-	    responsive:{
-	        0:{
-	            items: 1,
-	            dots: true,
-	            nav: false
-	        },
-	        768:{
-	            items: 1,
-	            dots: true,
-	            nav: true
-	        },
-	        1000:{
-	            items: 1,
-	            dots: true,
-	            nav: true
-	        }
-	    }
-	  });
-	});
-</script>
+
+
 

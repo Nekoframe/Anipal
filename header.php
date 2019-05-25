@@ -1,4 +1,4 @@
-<body data-spy="scroll" data-target="#navbar">
+<body data-spy="scroll" data-target="#navbar" id="top">
     
     <header>
     	<div class="header__top d-none d-md-block">
@@ -50,22 +50,22 @@
 				  <div class="collapse navbar-collapse" id="navbarToggler">
 				    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 				      <li class="nav-item">
-				        <a class="nav-link header__bottom__link" href="#home">Home <span class="sr-only">(current)</span></a>
+				        <a class="nav-link header__bottom__link" href="index.php#home">Home <span class="sr-only">(current)</span></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link header__bottom__link" href="#">About</a>
+				        <a class="nav-link header__bottom__link" href="index.php#about">About</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link header__bottom__link" href="#">Services</a>
+				        <a class="nav-link header__bottom__link" href="index.php#services">Services</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link header__bottom__link" href="#">Gallery</a>
+				        <a class="nav-link header__bottom__link" href="index.php#gallery">Gallery</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link header__bottom__link" href="#">Blog</a>
+				        <a class="nav-link header__bottom__link" href="index.php#blog">Blog</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link header__bottom__link" href="#">Contact</a>
+				        <a class="nav-link header__bottom__link" href="index.php#contact">Contact</a>
 				      </li>
 				    </ul>
 				  </div>

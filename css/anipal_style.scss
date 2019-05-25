@@ -5,8 +5,11 @@ $header_bar_top: #ffdddd;
 $header_bar_bottom: #ffffff;
 $btn_light: #ffdddd;
 $btn_light_text: #333333;
-// $testimonial_bg: #333333;
+$btn_dark: #000000;
+$btn_dark_text: #ffffff;
 $testimonial_bg: #ffdddd;
+$footer_bg: #2f2b2c;
+$nav_top: #ffffff;
 
 // text
 $text_light: #ffffff;
@@ -14,9 +17,16 @@ $title_line1: #dadbdd;
 $title_dark: #231f20;
 $title_light: #ffffff;
 $section_heading: #dadbdd;
-
 $text_link: #333333;
 $text_link_hover: #999999;
+$copyright: #ffffff;
+$footer_link: #ffdddd;
+$footer_link_hover: #ffdddd;
+
+
+
+
+
 
 // Mixins
 @mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
@@ -46,6 +56,17 @@ $text_link_hover: #999999;
   }
 }
 
+@mixin float-left {
+  float: left !important;
+}
+
+@mixin float-right {
+  float: right !important;
+}
+
+@mixin float-none {
+  float: none !important;
+}
 
 // Buttons
 button{
@@ -77,13 +98,44 @@ button{
 	}
 }
 
+.btn--dark{
+	background-color: $btn_dark;
+	border: solid 3px $btn_dark;
+	color: $btn_dark_text;
+	@include border-radii(0px, 0px, 0px, 0px);
+
+	&:hover, &.active{
+		background-color: transparent;
+		border: solid 3px $btn_dark;
+		color: $btn_dark;
+	}
+
+	&:focus{
+		outline: none;
+	}
+}
+
 
 body{
 	font-family: 'Nunito', sans-serif;
 	overflow-x: hidden;
 	font-size: 16px;
 	color: #333;
+
+	&::-webkit-scrollbar-track{
+		background-color: #F5F5F5;
+	}
+
+	&::-webkit-scrollbar{
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+
+	&::-webkit-scrollbar-thumb{
+		background-color: #000000;
+	}
 }
+
 
 // header
 header{
@@ -140,7 +192,7 @@ header{
 					padding-right: 1rem;
 					color: $text_link;
 
-					&:hover, &.active{
+					&:hover{
 						color: $text_link_hover;
 						text-decoration: none;
 					}
@@ -358,6 +410,7 @@ header{
 			    left: 0px;
 			    top: 0px;
 			    transition: all 0.3s ease;
+			    pointer-events: none;
 
 			    i{
 			    	text-align: center;
@@ -407,8 +460,8 @@ header{
 			text-align: center;
 
 			.testimonial__image{
-				width: 140px;
-				height: 140px;
+				width: 100%;
+				height: auto;
 				margin: 0px auto 40px auto;
 			}
 
@@ -501,6 +554,226 @@ header{
 		}
 	}
 }
+
+
+// blog
+.blog__wrapper{
+	padding: 50px 0px;
+	background-image: url('../img/dog_paw.png');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: 445px 360px;
+
+	.blog__card{
+		margin-top: 20px;
+
+		a{
+			display: block;
+			text-decoration: none;
+
+			figure{
+				position: relative;
+				opacity: 1;
+				transition: all 0.3s ease;
+			}
+
+			.blog__detail{
+				margin-top: 2rem;
+
+				h3{
+					font-size: 1rem;
+					font-weight: bold;
+					color: $text_link;
+					transition: all 0.3s ease;
+				}
+
+				p{
+					color: $text_link;
+					transition: all 0.3s ease;
+				}
+			}
+
+			&:hover{
+				h3, p{
+					color: $text_link_hover;
+				}
+
+				figure{
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+
+	.button__box{
+		text-align: right;
+		margin-top: 40px;
+	}
+}
+
+
+// contact
+.contact__wrapper{
+	padding: 50px 0px;
+	background-image: url('../img/service_bg.jpg');
+	background-size: cover;
+
+	.contact__detail{
+		h1{
+			font-size: 1rem;
+			font-weight: bold;
+			text-transform: capitalize;
+			margin-bottom: 2rem;
+		}
+
+		p{
+			a{
+				color: $text_link;
+
+				&:hover{
+					text-decoration: none;
+					color: $text_link_hover;
+				}
+			}
+
+			span, a{
+				margin-left: 1rem;
+			}
+		}
+
+	}
+
+	.contact__form{
+		.form-row{
+			margin-bottom: 1rem;
+		}
+
+		input{
+			@include border-radii(0px, 0px, 0px, 0px);
+			border: none;
+		}
+
+		textarea{
+			@include border-radii(0px, 0px, 0px, 0px);
+			border: none;
+			resize: none;
+		}
+
+		.button__box{
+			text-align: right;
+			margin-top: 30px;
+		}
+	}
+}
+
+
+// footer
+.nav--top{
+	width: 60px;
+	height: 60px;
+	background-color: $footer_bg;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 10;
+	opacity: 0;
+	transition: all 0.3s ease;
+
+	&.active{
+		opacity: 1;
+	}
+
+	.nav--top__link{
+		width: 100%;
+		height: 100%;
+		color: $nav_top;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    text-decoration: none;
+	}
+}
+
+footer{
+	padding-top: 48px;
+	padding-bottom: 37px;
+	background-color: $footer_bg;
+	text-align: center;
+
+	.footer__copyright{
+		color: $copyright;
+		margin: 0px;
+
+		a{
+			color: $footer_link;
+
+			&:hover{
+				color: $footer_link_hover;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// blog page
+.blog__banner-wrapper{
+	height: 200px;
+	position: relative;
+
+	.blog__banner{
+		background-image: url('../img/blog/blog_banner.jpg');
+		background-size: cover;
+		background-position: center center;
+		height: 100%;
+	}
+
+	&:after{
+	    position: absolute;
+	    content: "";
+	    z-index: -1;
+	    left: 0;
+	    top: auto;
+	    bottom: 0px;
+	    right: auto;
+	    z-index: 2;
+	    width: 100%;
+	    height: 70px;
+	    background: url('../img/img_edge.png');
+	    background-size: cover;
+	}
+}
+
+.article__wrapper{
+	padding: 50px 0px;
+
+	.article__box{
+		margin-top: 40px;
+
+		.article__title{
+			font-size: 2rem;
+			font-weight: bold;
+		}
+
+		p{
+			text-indent: 3rem;
+			margin-top: 2rem;
+		}
+	}
+
+	.button__box{
+		height: 42px;
+		margin-top: 80px;
+
+		.btn--prev{
+			@include float-left;
+		}
+
+		.btn--next{
+			@include float-right;
+		}
+	}
+}
+
 
 
 
@@ -614,10 +887,29 @@ header{
 	.testimonial__wrapper{
 		.tesimonial__list{
 			.tesimonial__card{
+				.testimonial__image{
+					width: 140px;
+					height: 140px;
+				}
+
 				.testimonial__detail{
 					width: 80%;
 				}
 			}
+		}
+	}
+
+	// blog
+	.blog__wrapper{
+		background-position: bottom 40px left 40px;
+	}
+
+	// blog page
+	.blog__banner-wrapper{
+		height: 300px;
+		
+		.blog__banner{
+
 		}
 	}
 }
@@ -709,5 +1001,42 @@ header{
 	}
 
 
+	// blog
+	.blog__wrapper{
+		padding: 100px 0px;
+
+		.blog__card{
+			margin-top: 0px;
+		}
+
+		&.blog__page{
+			.blog__card{
+				margin-top: 40px;
+			}
+		}
+	}
+
+
+	// contact
+	.contact__wrapper{
+		padding: 100px 0px;
+	}
+
+	.article__wrapper{
+		padding: 100px 0px;
+		
+		/*.article__box{
+			margin-top: 40px;
+
+			.article__title{
+				font-size: 2rem;
+				font-weight: bold;
+			}
+
+			p{
+				text-indent: 3rem;
+			}
+		}*/
+	}
 
 }
