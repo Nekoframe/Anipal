@@ -10,6 +10,8 @@ $btn_dark_text: #ffffff;
 $testimonial_bg: #ffdddd;
 $footer_bg: #2f2b2c;
 $nav_top: #ffffff;
+$social_bg: #ffdddd;
+
 
 // text
 $text_light: #ffffff;
@@ -22,6 +24,8 @@ $text_link_hover: #999999;
 $copyright: #ffffff;
 $footer_link: #ffdddd;
 $footer_link_hover: #ffdddd;
+$quote: #ffdddd;
+$bullet: #ffdddd;;
 
 
 
@@ -259,6 +263,7 @@ header{
 }
 
 
+
 // banner
 .banner__wrapper{
 	height: 100vh;
@@ -349,7 +354,8 @@ header{
 	padding: 50px 0px;
 
 	.aboutus__image{
-
+		order: 2;
+		-webkit-order: 2;
 	}
 
 	.aboutus__detail{
@@ -357,6 +363,8 @@ header{
 		background-repeat: no-repeat;
 		background-position: bottom right;
 		background-size: 325px 256px;
+		order: 1;
+		-webkit-order: 1;
 		p:not(.subtitle){
 			text-indent: 3rem;
 		}
@@ -715,6 +723,43 @@ footer{
 	}
 }
 
+.social__box{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+
+	.social{
+		width: 30px;
+		height: 30px;
+		margin-right: 0.5rem;
+
+		a{
+			@include border-radii(2px, 2px, 2px, 2px);
+			background-color: $social_bg;
+			width: 100%;
+			height: 100%;
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+			transition: all 0.5s ease;
+
+			i{
+				color: #ffffff;
+				transition: all 0.5s ease;
+			}
+
+			&:hover{
+				background-color: #ffffff;
+				text-decoration: none;
+
+				i{
+					color: $social_bg;
+				}
+			}
+		}
+	}
+}
+
 // blog page
 .blog__banner-wrapper{
 	height: 200px;
@@ -758,7 +803,97 @@ footer{
 			text-indent: 3rem;
 			margin-top: 2rem;
 		}
+
+		blockquote{
+			text-align: center;
+			&:after, &:before{
+			    display: block;
+			    color: $quote;
+			    font-size: 5rem;
+			    line-height: 0;
+			}
+
+			&:before{
+				content: "\201C";
+				margin-top: 5rem;
+			}
+
+			&:after{
+				content: "\201D";
+				margin-top: 3rem;
+			}
+
+			p{
+				text-indent: 0rem;
+				margin-top: 0rem;
+				margin-bottom: 0rem;
+				font-style: italic;
+				font-weight: bold;
+
+				span{
+					font-style: normal;
+					font-weight: normal;
+				}
+			}
+		}
+
+		ul{
+			list-style: none;
+			margin-top: 2rem;
+
+			li{
+				&:before{
+					content: "\2022";
+				  	color: $bullet;
+				  	font-weight: bold;
+				  	display: inline-block; 
+				  	width: 1em;
+				  	margin-left: -1em;
+				  	vertical-align: 1px;
+				}
+			}
+		}
 	}
+
+
+	.author__box{
+		hr{
+			border-top: solid 1px #ffdddd;
+		}
+
+		.auther__container{
+			margin-top: 80px;
+		}
+
+		figure{
+			text-align: center;
+
+			.author__image{
+				@include border-radii(50%, 50%, 50%, 50%);
+				width: 200px;
+				height: 200px;
+			}
+		}
+
+		.author__detail{
+			margin-top: 1rem;
+
+			h2{
+				font-size: 1.5rem;
+				font-weight: bold;
+				margin-bottom: 0rem;
+			}
+
+			strong{
+				color: #ffdddd;
+			}
+
+			p{
+				margin-top: 1rem;
+			}
+		}
+	}
+
 
 	.button__box{
 		height: 42px;
@@ -773,6 +908,8 @@ footer{
 		}
 	}
 }
+
+
 
 
 
@@ -870,6 +1007,19 @@ footer{
 		}
 	}
 
+	// about us
+	.aboutus__wrapper{
+		.aboutus__image{
+			order: 1;
+			-webkit-order: 1;
+		}
+
+		.aboutus__detail{
+			order: 2;
+			-webkit-order: 2;
+		}
+	}
+
 	// gallery
 	.gallery__wrapper{
 		.gallery__box{
@@ -888,8 +1038,8 @@ footer{
 		.tesimonial__list{
 			.tesimonial__card{
 				.testimonial__image{
-					width: 140px;
-					height: 140px;
+					width: 300px;
+					height: 300px;
 				}
 
 				.testimonial__detail{
@@ -917,6 +1067,7 @@ footer{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+
 	// banner
 	.banner__wrapper{
 		.banner{
@@ -950,6 +1101,7 @@ footer{
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px){
+
 	// banner
 	.banner__wrapper{
 		.banner{
@@ -1024,19 +1176,13 @@ footer{
 
 	.article__wrapper{
 		padding: 100px 0px;
-		
-		/*.article__box{
-			margin-top: 40px;
-
-			.article__title{
-				font-size: 2rem;
-				font-weight: bold;
-			}
-
-			p{
-				text-indent: 3rem;
-			}
-		}*/
 	}
 
 }
+
+// Extra large devices (large desktops, 1500px and up)
+/*@media (min-width: 1500px){
+	.section{
+		min-height: unset;
+	}
+}*/
