@@ -23,7 +23,7 @@ $text_link: #333333;
 $text_link_hover: #999999;
 $copyright: #ffffff;
 $footer_link: #ffdddd;
-$footer_link_hover: #ffdddd;
+$footer_link_hover: #ffffff;
 $quote: #ffdddd;
 $bullet: #ffdddd;;
 
@@ -714,6 +714,7 @@ footer{
 
 		a{
 			color: $footer_link;
+			transition: all 0.5s ease;
 
 			&:hover{
 				color: $footer_link_hover;

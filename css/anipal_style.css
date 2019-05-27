@@ -438,9 +438,10 @@ footer {
     color: #ffffff;
     margin: 0px; }
     footer .footer__copyright a {
-      color: #ffdddd; }
+      color: #ffdddd;
+      transition: all 0.5s ease; }
       footer .footer__copyright a:hover {
-        color: #ffdddd;
+        color: #ffffff;
         text-decoration: none; }
 
 .social__box {
