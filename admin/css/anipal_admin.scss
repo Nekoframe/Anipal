@@ -695,12 +695,12 @@ table.admin__table{
 
 }
 
-table.dataTable.no-footer{
-	// border: 2px solid $primary;
-	border: none;
-}
-
 table.dataTable{
+
+	&.no-footer{
+		border: none;
+	}
+
 	 tbody{
 	 	tr{
 	 		border: 2px solid $primary;
@@ -917,26 +917,26 @@ only screen and (max-width: 760px),
 		}
 	}
 
-	table.dataTable.no-footer{
-		border: 2px solid $primary;
-	}
-
 	table.dataTable{
+		&.no-footer{
+			border: 2px solid $primary;
+		}
+
 		thead, tfoot{
 			th{
 				border-bottom: none;
 			}
 		}
-	}
 
-	table.dataTable{
-		 tbody{
+		tbody{
 		 	tr{
 		 		border: 2px solid $primary;
 		 		margin-bottom: 0px;
 		 	}
 		 }
 	}
+
+
 	
 }
 

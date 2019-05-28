@@ -413,7 +413,6 @@ table.admin__table {
 
 table.dataTable.no-footer {
   border: none; }
-
 table.dataTable tbody tr {
   border: 2px solid #ffdddd;
   margin-bottom: 20px; }
@@ -541,10 +540,8 @@ table.dataTable tbody tr {
 
   table.dataTable.no-footer {
     border: 2px solid #ffdddd; }
-
   table.dataTable thead th, table.dataTable tfoot th {
     border-bottom: none; }
-
   table.dataTable tbody tr {
     border: 2px solid #ffdddd;
     margin-bottom: 0px; } }
