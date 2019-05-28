@@ -26,6 +26,7 @@
 						        	<th scope="col">#</th>
 						            <th scope="col">Image</th>
 						            <th scope="col">Caption</th>
+						            <th scope="col">Publish</th>
 						            <th scope="col">Edit</th>
 						            <th scope="col">Delete</th>
 						        </tr>
@@ -37,6 +38,9 @@
 						            	<img src="../img/banner/banner1.jpg" class="banner__fixed" alt="Thanawan Pinlaem">
 						            </td>
 						            <td>We will take care of your pet</td>
+						            <td>
+						            	<input type="checkbox" class="btn__publish" name="banner__public">
+						            </td>
 									<td>
 										<button class="btn btn--light btn--admin">Edit</button>
 									</td>
@@ -50,6 +54,9 @@
 						            	<img src="../img/banner/banner2.jpg" class="banner__fixed" alt="Thanawan Pinlaem">
 						            </td>
 						            <td>Pet training is available here</td>
+						            <td>
+						            	<input type="checkbox" class="btn__publish" name="banner__public">
+						            </td>
 									<td>
 										<button class="btn btn--light btn--admin">Edit</button>
 									</td>
@@ -159,6 +166,7 @@
 						            <th scope="col">Image</th>
 						            <th scope="col">Service</th>
 						            <th scope="col">Detail</th>
+						            <th scope="col">Publish</th>
 						            <th scope="col">Edit</th>
 						            <th scope="col">Delete</th>
 						        </tr>
@@ -172,6 +180,9 @@
 						            <td>Petting Sitting</td>
 						            <td>
 						            	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						            </td>
+						            <td>
+						            	<input type="checkbox" class="btn__publish" name="service__public">
 						            </td>
 									<td>
 										<button class="btn btn--light btn--admin">Edit</button>
@@ -189,6 +200,9 @@
 						            <td>
 						            	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 						            </td>
+						            <td>
+						            	<input type="checkbox" class="btn__publish" name="service__public">
+						            </td>
 									<td>
 										<button class="btn btn--light btn--admin">Edit</button>
 									</td>
@@ -205,6 +219,9 @@
 						            <td>
 						            	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 						            </td>
+						            <td>
+						            	<input type="checkbox" class="btn__publish" name="service__public">
+						            </td>
 									<td>
 										<button class="btn btn--light btn--admin">Edit</button>
 									</td>
@@ -220,6 +237,9 @@
 						            <td>Behaviour Consultation</td>
 						            <td>
 						            	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						            </td>
+						            <td>
+						            	<input type="checkbox" class="btn__publish" name="service__public">
 						            </td>
 									<td>
 										<button class="btn btn--light btn--admin">Edit</button>
@@ -327,6 +347,7 @@
 					            <th scope="col">Image</th>
 					            <th scope="col">Name</th>
 					            <th scope="col">Detail</th>
+					            <th scope="col">Publish</th>
 					            <th scope="col">Edit</th>
 					            <th scope="col">Delete</th>
 					        </tr>
@@ -340,6 +361,9 @@
 					            <td>Thanawan Pinlaem</td>
 					            <td>
 					            	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					            </td>
+					            <td>
+					            	<input type="checkbox" class="btn__publish" name="testimonial__public">
 					            </td>
 								<td>
 									<button class="btn btn--light btn--admin">Edit</button>
@@ -356,6 +380,9 @@
 					            <td>Sebastian Galoch</td>
 					            <td>
 					            	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					            </td>
+					            <td>
+					            	<input type="checkbox" class="btn__publish" name="testimonial__public">
 					            </td>
 								<td>
 									<button class="btn btn--light btn--admin">Edit</button>
@@ -426,6 +453,7 @@
 					            <th scope="col">Thumbnail</th>
 					            <th scope="col">Short Description</th>
 					            <th scope="col">Blog Detail</th>
+					            <th scope="col">Publish</th>
 					            <th scope="col">Edit</th>
 					            <th scope="col">Delete</th>
 					        </tr>
@@ -446,6 +474,9 @@
 					            	<div class="blog__detail">
 					            		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					            	</div>
+					            </td>
+					            <td>
+					            	<input type="checkbox" class="btn__publish" name="blog__public">
 					            </td>
 								<td>
 									<button class="btn btn--light btn--admin">Edit</button>
@@ -469,6 +500,9 @@
 					            	<div class="blog__detail">
 					            		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					            	</div>
+					            </td>
+					            <td>
+					            	<input type="checkbox" class="btn__publish" name="blog__public">
 					            </td>
 								<td>
 									<button class="btn btn--light btn--admin">Edit</button>

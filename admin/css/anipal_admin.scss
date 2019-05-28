@@ -416,6 +416,13 @@ footer{
 	    resize: none;
 	}
 
+	input{
+		&.btn__publish{
+			width: 20px;
+			height: 20px;
+		}
+	}
+
 	.form-check-input{
 		width: 20px;
 		height: 20px;
@@ -689,7 +696,17 @@ table.admin__table{
 }
 
 table.dataTable.no-footer{
-	border: 2px solid $primary;
+	// border: 2px solid $primary;
+	border: none;
+}
+
+table.dataTable{
+	 tbody{
+	 	tr{
+	 		border: 2px solid $primary;
+	 		margin-bottom: 20px;
+	 	}
+	 }
 }
 
 
@@ -738,8 +755,9 @@ only screen and (max-width: 760px),
 				&:nth-of-type(1):before { content: "#"; }
 				&:nth-of-type(2):before { content: "Image"; }
 				&:nth-of-type(3):before { content: "Caption"; }
-				&:nth-of-type(4):before { content: "Edit"; }
-				&:nth-of-type(5):before { content: "Delete"; }
+				&:nth-of-type(4):before { content: "Publish"; }
+				&:nth-of-type(5):before { content: "Edit"; }
+				&:nth-of-type(6):before { content: "Delete"; }
 			}
 		}
 
@@ -750,8 +768,9 @@ only screen and (max-width: 760px),
 				&:nth-of-type(2):before { content: "Image"; }
 				&:nth-of-type(3):before { content: "Service"; }
 				&:nth-of-type(4):before { content: "Detail"; }
-				&:nth-of-type(5):before { content: "Edit"; }
-				&:nth-of-type(6):before { content: "Delete"; }
+				&:nth-of-type(5):before { content: "Publish"; }
+				&:nth-of-type(6):before { content: "Edit"; }
+				&:nth-of-type(7):before { content: "Delete"; }
 			}
 		}
 
@@ -762,8 +781,9 @@ only screen and (max-width: 760px),
 				&:nth-of-type(2):before { content: "Image"; }
 				&:nth-of-type(3):before { content: "Name"; }
 				&:nth-of-type(4):before { content: "Detail"; }
-				&:nth-of-type(5):before { content: "Edit"; }
-				&:nth-of-type(6):before { content: "Delete"; }
+				&:nth-of-type(5):before { content: "Publish"; }
+				&:nth-of-type(6):before { content: "Edit"; }
+				&:nth-of-type(7):before { content: "Delete"; }
 			}
 		}
 
@@ -775,8 +795,9 @@ only screen and (max-width: 760px),
 				&:nth-of-type(3):before { content: "Thumbnail"; }
 				&:nth-of-type(4):before { content: "Short Description"; }
 				&:nth-of-type(5):before { content: "Blog Detail"; }
-				&:nth-of-type(6):before { content: "Edit"; }
-				&:nth-of-type(7):before { content: "Delete"; }
+				&:nth-of-type(6):before { content: "Publish"; }
+				&:nth-of-type(7):before { content: "Edit"; }
+				&:nth-of-type(8):before { content: "Delete"; }
 			}
 		}
 	}
@@ -896,6 +917,26 @@ only screen and (max-width: 760px),
 		}
 	}
 
+	table.dataTable.no-footer{
+		border: 2px solid $primary;
+	}
+
+	table.dataTable{
+		thead, tfoot{
+			th{
+				border-bottom: none;
+			}
+		}
+	}
+
+	table.dataTable{
+		 tbody{
+		 	tr{
+		 		border: 2px solid $primary;
+		 		margin-bottom: 0px;
+		 	}
+		 }
+	}
 	
 }
 
