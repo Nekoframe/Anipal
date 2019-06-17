@@ -10,10 +10,10 @@ $(document).ready(function(){
 
 	// Owl Carousel
 	$("#testimonial__carousel").owlCarousel({
-	  	autoPlay: 3000,
+	  	autoplay: true,
+	  	autoplayTimeout: 6000,
 	  	loop: true,
-	    // margin: 30,
-	    item: 1,
+	    items: 1,
 
 	    // responsiveClass: true,
 	    responsive:{
